@@ -1,3 +1,6 @@
+// An *almost* ready to run Flyweight Pattern sample code in java. 
+// Re-written from the original source https://refactoring.guru/design-patterns/flyweight
+
 class Tree
 {
     private int x, y;
