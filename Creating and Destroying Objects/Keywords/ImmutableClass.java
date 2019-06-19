@@ -15,8 +15,9 @@ public class ImmutableClass
     }
 }
 
-final class ImmutableKlass
+final class ImmutableKlass // final - so that child class
 {
+    // fields declared as final so that they cannot be changed once they are initialized
     private final String name;
     private final int age;
 
@@ -35,4 +36,6 @@ final class ImmutableKlass
     {
         return age;
     }
+    
+    // No setters so that fields cannot be changed
 }
