@@ -1,5 +1,5 @@
-// An *almost* ready to run Flyweight Pattern sample code in java. 
-// Re-written from the original source https://refactoring.guru/design-patterns/flyweight
+// Rewritten an *almost* ready to run Flyweight Pattern sample code in java
+// The original source code https://refactoring.guru/design-patterns/flyweight
 
 class Tree
 {
