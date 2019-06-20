@@ -25,6 +25,8 @@ class Worker {
     private Date dateOfBirth;
     private boolean isMarried;
 
+    // Static Factory Methods gives us the control over the instances that are created.
+    // They also let's us use better names for instance creation.
     public static Worker getInstance(String name, int age, Date dateOfBirth, boolean isMarried) {
         Worker worker = new Worker();
         if (workerInstance != null) {
