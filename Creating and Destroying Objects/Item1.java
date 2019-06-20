@@ -9,6 +9,10 @@ public class Item1
          System.out.println(worker);
          worker = Worker.getInstance("Inanc", 23, new Date(), true);
          System.out.println(worker);
+          
+         // Output:
+         // { Worker = name = Recep, age = 22, dateOfBirth = Thu Jun 20 08:58:07 EET 2019, isMarried = false }
+         // { Worker = name = Recep, age = 22, dateOfBirth = Thu Jun 20 08:58:07 EET 2019, isMarried = false }
      }
 }
 
