@@ -1,5 +1,5 @@
 # Item 10: Obey the general contract when overriding equals
-**Keywords: -**
+*Keywords: -*
 
 It is appropriate to override equals when a class has a notion of logical equality that differs from mere object identity and a superclass has not already overridden equals. This is generally the case for value classes. A value class is simply a class that represents a value, such as Integer or String. 
 
