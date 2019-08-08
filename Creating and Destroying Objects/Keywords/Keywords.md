@@ -8,4 +8,17 @@
 
 *Transient* - By definition it means “lasting for a short time”. When an object is transferred through the network, the object needs to be 'serialized'. Serialization converts the object state to serial bytes. Those bytes are sent over the network and the object is recreated from those bytes. Member variables marked by the java transient keyword are not transferred, they are lost intentionally. In Java, transient keyword is used for the variables which we do not want to be serialized. Those variables will have their default value as the result. It is good habit to use transient keyword with private confidential fields of a class during serialization.
 
-*Single-Element Enum* - It is told in Effective Java this is the preferred way of creating a singleton class. 
+*Single-Element Enum* - It is told in Effective Java this is the preferred way of creating a singleton class.  
+
+*Dependency Injection* - https://medium.com/@atarikguney/dependency-injection-nedir-1124c15249ad Last principle in SOLI(D). The goal is to inject the classes you depend in your class so that it works properly without you needing it to manage.  
+
+*Static Utility Class* -  These are Helper classes that contains only static methods, it is stateless and it cannot be instantiated. Goal is to increase reusability, but as a down side it increases coupling between classes, creating external dependency and make it harder to test. Utility classes should be avoided as much as possible because of this down sides http://ralin.io/blog/oop-anti-patterns-utility-or-helper-classes.html.  
+
+*Dagger, Guice, Spring* - These are dependency injection frameworks.
+
+*Lazy Loading* - It is an optimization technique that works by loading only the content that is needed by the user. It reduces time and memory consumption.  
+
+*Autoboxing* - Converting a primitive value into an object of the corresponding wrapper class. boolean -> Boolean, int -> Integer, long -> Long …  
+
+*Memory Leak* - A memory heap is a portion memory that is dynamically allocated memory resides. A memory heap is a location in memory where memory may be allocated at random access.
+Unlike the stack where memory is allocated and released in a very defined order, individual data elements allocated on the heap are typically released in ways which is asynchronous from one another. Memory leak occurs when programmers create a memory in heap and forget to delete it. Memory leaks are particularly serious issues for programs like daemons and servers which by definition never terminate.
