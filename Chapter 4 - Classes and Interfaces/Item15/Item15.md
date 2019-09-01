@@ -20,3 +20,9 @@ Instance fields of public classes should rarely be public.
 
 Since nonzero-length arrays are always mutable, it is wrong for a class to have public static final array field, or an accessor that returns such a field. If a class has such a field, they will be able to modify the contents of the array, and this is a frequent source of security holes. You can fix this by having a public static final List that is initialized with the private static final array using the Arrays.asList(array) method. Alternatively, a static method that returns an private static final array’s .clone() 
 
+**TL;DR**
+
+* Keep accessibility of components at minimum
+* Do your best to design a minimal public API.
+* Public classes should have no public fields - except public static final fields that serve as a constant.
+* Ensure the objects referenced by public static final fields are immutable.
